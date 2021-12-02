@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  example1:
+    image: nginx:alpine
+    volumes:
+      - ./html/example1.html:/usr/share/nginx/html/index.html
+    ports:
+      - "8001:80"
+
+  example2:
+    image: nginx:alpine
+    volumes:
+      - ./html/example2.html:/usr/share/nginx/html/index.html
+    ports:
+      - "8002:80"
+  
+  proxy:
+    build: ./proxy/
+    ports:
+      - 8003:80
+      - 4433:443
+    volumes:
+      - ./proxy/default.conf:/etc/nginx/conf.d/default.conf
