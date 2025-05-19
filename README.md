@@ -13,11 +13,23 @@ mkdir -p proxy/ssl
 1) Create CRTs and keys, run in your terminal (Set default values):
 
 ```bash
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout proxy/ssl/example1.key -out proxy/ssl/example1.crt
+openssl req \
+  -x509 \
+  -nodes \
+  -days 365 \
+  -newkey rsa:2048 \
+  -keyout proxy/ssl/example1.key \
+  -out proxy/ssl/example1.crt
 ```
 
 ```bash
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout proxy/ssl/example2.key -out proxy/ssl/example2.crt
+openssl req \
+  -x509 \
+  -nodes \
+  -days 365 \
+  -newkey rsa:2048 \
+  -keyout proxy/ssl/example2.key \
+  -out proxy/ssl/example2.crt
 ```
 
 2) Run in your terminal:
