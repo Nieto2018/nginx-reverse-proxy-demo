@@ -2,7 +2,7 @@
 
 Test exercise based on the tutorial: <https://phoenixnap.com/kb/docker-nginx-reverse-proxy>.
 
-This project deploy a `Nginx` instance with protocol `HTTPS`, with `self-signed certificates`, and three `secured endpoints`: two simple endpoints and one load-balancer endpoint.
+This project deploy an `Nginx` instance with the `HTTPS` protocol and `self-signed certificates`. There are three `endpoints`: two `secured endpoints` and a `load-balancer endpoint`.
 
 ## Set up Docker cluster
 
