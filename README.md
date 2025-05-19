@@ -2,6 +2,8 @@
 
 Test exercise based on the tutorial: <https://phoenixnap.com/kb/docker-nginx-reverse-proxy>.
 
+This project deploy a `Nginx` instance with protocol `HTTPS`, with `self-signed certificates`, and three `secured endpoints`: two simple endpoints and one load-balancer endpoint.
+
 ## Set up Docker cluster
 
 1) Create directory ssl in proxy directory if it does not exist:
@@ -78,7 +80,7 @@ http://localhost:8003/example2
 hostname -I | awk '{print $1}'
 ```
 
-it will return a similar output as "192.168.0.50"
+it will return a similar output as `192.168.0.50`.
 
 2) Put in the browser in another machine
 
